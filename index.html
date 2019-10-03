@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversor de moedas</title>
+</head>
+<body>
+
+	<form>
+		<input type="text" name="metical" id="mt">
+		<input type="button" name="click" onclick="conversor()" value="converter">
+		<div id="visor">000</div>
+	</form>
+	<script type="text/javascript">	
+		const conversor = () =>{
+
+			const dolar = 62;
+			const metical = document.querySelector('#mt').value;
+			const converter = dolar*metical;
+			const visor = document.querySelector('#visor').innerHTML=converter;
+		}
+	</script>
+</body>
+</html>
