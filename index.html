@@ -2,11 +2,20 @@
 <html>
 <head>
 	<title>Conversor de moedas</title>
+	<style type="text/css">
+		#visor{
+			background: #03d3fc;
+			color: white;
+			width: 230px;
+			margin-top: 10px;
+			padding: 10px;
+		}
+	</style>
 </head>
 <body>
 
 	<form>
-		<input type="text" name="metical" id="mt">
+		<input type="text" name="metical" id="mt" placeholder="escreva aqui para converter a tua moeda">
 		<input type="button" name="click" onclick="conversor()" value="converter">
 		<div id="visor">000</div>
 	</form>
